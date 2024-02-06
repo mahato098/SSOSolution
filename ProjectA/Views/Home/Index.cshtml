@@ -1,0 +1,18 @@
+﻿@model ProjectA.ViewModel.LoginVM;
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+
+@{
+    ViewData["Title"] = "Project A Home Page";
+}
+
+<div>
+    <span>Project A Dashboard</span>
+   @*  <h4>Hello, @HttpContextAccessor?.HttpContext.Session.GetString(@User.Identity!.Name)</h4> *@
+   
+   
+   <h4>Hello, @User.Identity!.Name</h4>
+
+</div>
+
+
